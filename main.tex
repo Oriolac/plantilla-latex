@@ -36,13 +36,13 @@
 \usepackage{iflang}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%% UTIL COMMANDS %%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%% UTIL COMMANDS %%%%%%%%%%%%  
 
 \newcommand{\nc}{\newcommand}
 \nc{\supindex}{\textsuperscript}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%% CONFIG FILE %%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%% CONFIG FILE %%%%%%%%%%%%%
 
 \nc{\mytitle}{Exercicis d'ARA}
 \nc{\mysubtitle}{Bayesian Inference}
@@ -55,12 +55,18 @@
 % 	Ex: Maria, Joan, Pere
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%  LANGUAGE   %%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%  LANGUAGE   %%%%%%%%%%%%%
 
 \newcommand{\tr}{\IfLanguageName{english}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%% TREE CREATOR %%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% MATH %%%%%%%%%%%%%%%%
+
+\nc{\prob}[1]{P({#1})}
+\nc{\probl}[2]{P({#1}|{#2})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% TREE CREATOR %%%%%%%%%%%%
 
 \setpapersize{A4}
 \setmargins{2.5cm}  % margen izquierdo
@@ -76,6 +82,8 @@
 
 \def\contentsname{Índex}
 \begin{document}
+	
+
 \begin{titlepage}
 \begin{figure}[htb]
 \begin{center}
@@ -124,17 +132,9 @@ Grau en Enginyeria Informàtica
 \end{titlepage}
 \tableofcontents
 \thispagestyle{empty} 
-\newpage
-\listoffigures    %si és necessari
+%\newpage
+\listoffigures
 \listoftables
 \thispagestyle{empty}
-\section{title}
-\begin{equation*}
-\begin{tikzcd}
-& C \arrow{d}{} & \\
-& + \arrow{dl}&\\
-a&&
-\end{tikzcd}
-\end{equation*}
+\newpage
 \end{document}
-
